@@ -24,12 +24,11 @@ We plan to merge some code from SMAUG.
 
 <P ALIGN=JUSTIFY>The main developing platform for Muddy is FreeBSD, so you
 should not have any troubles building Muddy under FreeBSD.
+Muddy is known to compile under Linux successfully.
 At the early stage ports to SunOS 5.x and Unixware 2.x were made
-but for now these ports may be broken (signal processing is still BSD-style)
-and I do not want to patch those parts of code though it is not hard --
-I do not have enough time and interest (fjoe).
-Some people have reported that they have compiled Muddy on Linux successfully
-but the problem is in System V semantics for signals under Linux.
+but for now these ports may be (and I'm sure they are :) broken.
+But there should not be any problems compiling Muddy there -- all
+missing functions are in compat/ (strsep, [v]snprintf etc.)
 We have a port of Muddy to win32 (it is in main CVS tree now).
 The author of this port is <a href="mailto:tyunaev@usa.net">Tim Yunaev</a>.
 Please send all your questions about win32 port to him.
