@@ -1,40 +1,55 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <HTML>
 <HEAD>
-<TITLE>Muddy MUD Realms</TITLE>
+<TITLE>Shades of Gray</TITLE>
 </HEAD>
 <BODY BGCOLOR=#000000
       TEXT=#FFFFFF>
 
-<H1 ALIGN=CENTER>Muddy MUD Realms</H1>
+<H1 ALIGN=CENTER>Shades of Gray</H1>
 
 <P ALIGN=FUSTIFY>
-Muddy MUD project was started on April 1998.
-Muddy is based in Anatolia 2.1b2 code.
+SoG project was started on April 1998.
+SoG is based in Anatolia 2.1b2 code.
 The main project goal is multilanguage support.
 Currently english and russian languages are supported.
 Support for other languages can be easily added.
 
 <P ALIGN=JUSTIFY>
-At this time we have areas and message multilanguage support,
+At this time we have multilanguage support (with automatic
+grammatic word forms creation),
 color code (by Lope), automatic quest code (almost completely rewritten),
+challenge quests, skill affects,
 many bugfixes and internal enhancements, ROM OLC code 1.71 merged
 (almost completely rewritten and enhanced).
+We also have moved almost all the static tables to configuration files
+and have an ability to reload spellfuns, dofuns and OLC code
+dynamically. We removed almost all the hardcoded CLAN_XXX, CLASS_XXX
+and RACE_XXX constants from the code so SoG should be
+a pretty good codebase.
 We plan to merge some code from SMAUG.
 
-<P ALIGN=JUSTIFY>The main developing platform for Muddy is FreeBSD, so you
-should not have any troubles building Muddy under FreeBSD.
-Muddy is known to compile under Linux successfully.
+<P ALIGN=JUSTIFY>The main development platform for SoG is FreeBSD, so you
+should not have any troubles building SoG under FreeBSD.
+SoG is known to compile under Linux successfully.
 At the early stage ports to SunOS 5.x and Unixware 2.x were made
 but for now these ports may be (and I'm sure they are :) broken.
-But there should not be any problems compiling Muddy there -- all
+But there should not be any problems compiling SoG there -- all
 missing functions are in compat/ (strsep, [v]snprintf etc.)
-We have a port of Muddy to win32 (it is in main CVS tree now).
+We have a port of SoG to win32 (it is in main CVS tree now).
 The author of this port is <a href="mailto:tyunaev@usa.net">Tim Yunaev</a>.
 Please send all your questions about win32 port to him.
 
-<P ALIGN=JUSTIFY>We put Muddy sources on Anonymous CVS.
-You can also access Muddy via <A HREF="http://cs.nstu.ru/cgi-bin/cvsweb/sog/">cvsweb</A>.
+<P ALIGN=JUSTIFY>
+Please note that some Linux distributions (e.g.: RedHat 5.x) have broken ld.so
+which may cause troubles with our dynamically loaded modules.
+Please update ld.so if you have any troubles.
+FreeBSD also had this problem but it was fixed in both 4.0-current
+and 3.0-stable branches (by me :) somewhere in the Jul 1999.
+
+<P ALIGN=JUSTIFY>
+The latest public snapshot can be downloaded
+<a href="ftp://iclub.nsu.ru/pub/mud/codebase/SoG/">here</a>.
 
 <P ALIGN=JUSTIFY>If you have made any patches -- feel free to e-mail them to
 <a href="mailto:mud@iclub.nsu.ru">mud@iclub.nsu.ru</a>
@@ -49,12 +64,12 @@ with only one line in the message body: 'subscribe mud-devel' (without quotes :)
 <TABLE>
 <TR>
 <TD><A HREF="mailto:mud@iclub.nsu.ru">[Mail us]</A></TD>
-<TD><A HREF="telnet://iclub.nsu.ru:4000">[Experience Muddy MUD Realms]</A></TD>
+<TD><A HREF="telnet://iclub.nsu.ru:4000">[Experience Shades of Gray]</A></TD>
 </TABLE>
 </CENTER>
 <HR>
 <BR>
-<A HREF="welcome_eng.html"><IMG SRC="pictures/back.gif" WIDTH=90 HEIGHT=17 BORDER=0 ALT="Íàçàä"></A>
+<A HREF="welcome_eng.html"><IMG SRC="pictures/back.gif" WIDTH=90 HEIGHT=17 BORDER=0 ALT="îÁÚÁÄ"></A>
 <BR>
 <BR>
 </BODY>
